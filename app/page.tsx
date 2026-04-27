@@ -169,7 +169,7 @@ export default function Home() {
 };
 const sendTg = async (text: string) => {
   try {
-    await fetch("https://oblako51-bot-mary17031725.waw0.amvera.tech/order", {
+    await fetch("https://dostavka-mary17031725.waw0.amvera.tech", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -194,7 +194,7 @@ const handleOrder = async () => {
   const message = `🛒 НОВЫЙ ЗАКАЗ!\n👤 ${userName}\n📧 ${userEmail}\n📍 ${userAddress}${zone}\n\n${list}\n💰 ИТОГО: ${total} ₽`;
 
   try {
-    await fetch("https://oblako51-bot-mary17031725.waw0.amvera.tech/order", {
+    await fetch("https://dostavka-mary17031725.waw0.amvera.tech", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify({
