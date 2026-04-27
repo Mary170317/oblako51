@@ -170,12 +170,13 @@ export default function Home() {
 const handleChat = async () => {
   if (!chatMessage.trim()) return;
   try {
-    await fetch("https://oblako51.vercel.app/api/send", {
+    await fetch("https://telegram-bot-sender.vercel.app/api/send", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify({
-    text: message,
-    type: type
+    botToken: "8216611154:AAFoWsw_uIO6ipvDkzHRZC6lMxzFA3cWkMk",
+    chatId: "7766881831",
+    text: message
   }),
 });
     setChatSent(true);
@@ -193,12 +194,13 @@ const handleOrder = async () => {
   const message = `🛒 НОВЫЙ ЗАКАЗ!\n👤 ${userName}\n📧 ${userEmail}\n📍 ${userAddress}${zone}\n\n${list}\n💰 ИТОГО: ${total} ₽`;
 
   try {
-    await fetch("https://oblako51.vercel.app/api/send", {
+    await fetch("https://telegram-bot-sender.vercel.app/api/send", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify({
-    text: message,
-    type: type
+    botToken: "8216611154:AAFoWsw_uIO6ipvDkzHRZC6lMxzFA3cWkMk",
+    chatId: "7766881831",
+    text: `💬 Сообщение с сайта:\n👤 ${userName || "Гость"}\n📍 ${userAddress || "—"}\n💬 ${chatMessage}`
   }),
 });
     alert("✅ Заказ отправлен!");
