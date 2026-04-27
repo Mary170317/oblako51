@@ -156,7 +156,7 @@ export default function Home() {
 
   const sendTg = async (text: string) => {
   try {
-    await fetch("http://oblako51-bot-mary17031725.waw0.amvera.tech/order", {
+    await fetch("http://run-oblako51-bot/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text: text }),
@@ -170,7 +170,7 @@ export default function Home() {
   const handleChat = async () => {
   if (!chatMessage.trim()) return;
   try {
-    await fetch("http://oblako51-bot-mary17031725.waw0.amvera.tech/chat", {
+    await fetch("http://run-oblako51-bot/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
