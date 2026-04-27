@@ -195,7 +195,6 @@ export default function Home() {
           <div className="container mx-auto px-4 py-3 flex gap-3 items-center flex-wrap">
             <MapPin className="w-5 h-5 text-[#e87722]" /><input type="text" placeholder="📍 Введите адрес доставки" value={userAddress} onChange={e => { setUserAddress(e.target.value); setAddressConfirmed(false); }} className="bg-white border border-orange-200 rounded-xl px-4 py-2.5 outline-none flex-1 text-sm" />
             <button onClick={confirmAddress} className={`font-medium text-sm px-4 py-2.5 rounded-xl flex items-center gap-1.5 ${addressConfirmed ? "bg-green-500 text-white" : "bg-[#e87722] text-white"}`}>{addressConfirmed ? <><Check className="w-4 h-4" /> Подтверждён</> : "Подтвердить"}</button>
-            <button onClick={() => setIsMapVisible(true)} className="text-[#e87722] font-medium text-sm bg-white px-4 py-2.5 rounded-xl border border-orange-200">Выбрать на карте</button>
           </div>
           {addressError && <div className="container mx-auto px-4 pb-2 text-red-500 text-xs flex items-center gap-1"><AlertCircle className="w-3 h-3" /> {addressError}</div>}
         </div>
