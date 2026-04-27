@@ -180,7 +180,7 @@ export default function Home() {
         </div>
       </header>
 
-      <div className="w-full h-32 md:h-48 overflow-hidden">
+      <div className="w-full h-24 md:h-36 overflow-hidden rounded-b-3xl">
   <img 
     src="https://avatars.mds.yandex.net/i?id=1464f4f5e31f574205e1066475e11c4c37253dac-4955124-images-thumbs&n=13" 
     alt="Свежие продукты" 
