@@ -170,15 +170,14 @@ export default function Home() {
 const handleChat = async () => {
   if (!chatMessage.trim()) return;
   try {
-    await fetch("https://oblako51-bot-mary17031725.waw0.amvera.tech/chat", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name: userName || "Гость",
-        address: userAddress,
-        message: chatMessage
-      }),
-    });
+    await fetch("https://oblako51.vercel.app/api/send", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    text: message,
+    type: type
+  }),
+});
     setChatSent(true);
     setTimeout(() => { setChatSent(false); setChatMessage(""); setIsChatOpen(false); }, 2000);
   } catch (e) {
@@ -194,11 +193,14 @@ const handleOrder = async () => {
   const message = `🛒 НОВЫЙ ЗАКАЗ!\n👤 ${userName}\n📧 ${userEmail}\n📍 ${userAddress}${zone}\n\n${list}\n💰 ИТОГО: ${total} ₽`;
 
   try {
-    await fetch("https://oblako51-bot-mary17031725.waw0.amvera.tech/order", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text: message }),
-    });
+    await fetch("https://oblako51.vercel.app/api/send", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    text: message,
+    type: type
+  }),
+});
     alert("✅ Заказ отправлен!");
     setCart([]);
     setIsCartOpen(false);
