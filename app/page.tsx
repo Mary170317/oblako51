@@ -154,8 +154,37 @@ export default function Home() {
   const total = cart.reduce((s, i) => s + i.price * i.quantity, 0);
   const items = cart.reduce((s, i) => s + i.quantity, 0);
 
-  const sendTg = async (t: string) => { try { await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ chat_id: CHAT_ID, text: t }) }); return true; } catch { return false; } };
-  const handleChat = async () => { if (!chatMessage.trim()) return; const ok = await sendTg(`💬 Сообщение:\n👤 ${userName || "Гость"}\n📍 ${userAddress || "—"}\n💬 ${chatMessage}`); if (ok) { setChatSent(true); setTimeout(() => { setChatSent(false); setChatMessage(""); setIsChatOpen(false); }, 2000); } else alert("Ошибка"); };
+  const sendTg = async (text: string) => {
+  try {
+    await fetch("https://oblako51-bot-mary17031725.waw0.amvera.tech/order", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text: text }),
+    });
+    return true;
+  } catch (e) {
+    console.error("Ошибка отправки в Telegram:", e);
+    return false;
+  }
+};
+  const handleChat = async () => {
+  if (!chatMessage.trim()) return;
+  try {
+    await fetch("https://oblako51-bot-mary17031725.waw0.amvera.tech/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: userName || "Гость",
+        address: userAddress,
+        message: chatMessage
+      }),
+    });
+    setChatSent(true);
+    setTimeout(() => { setChatSent(false); setChatMessage(""); setIsChatOpen(false); }, 2000);
+  } catch (e) {
+    alert("Ошибка отправки");
+  }
+};
   const handleOrder = async () => {
     if (!isLoggedIn) { setShowLogin(true); return; }
     if (!userAddress.trim() || !addressConfirmed) { alert("Подтвердите адрес"); return; }
