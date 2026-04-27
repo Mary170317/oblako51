@@ -167,22 +167,22 @@ export default function Home() {
     return false;
   }
 };
-const handleChat = async () => {
-  if (!chatMessage.trim()) return;
+const sendTg = async (text: string) => {
   try {
-    await fetch("https://telegram-bot-sender.vercel.app/api/send", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({
-    botToken: "8216611154:AAFoWsw_uIO6ipvDkzHRZC6lMxzFA3cWkMk",
-    chatId: "7766881831",
-    text: message
-  }),
-});
-    setChatSent(true);
-    setTimeout(() => { setChatSent(false); setChatMessage(""); setIsChatOpen(false); }, 2000);
+    await fetch("https://oblako51-bot-mary17031725.waw0.amvera.tech/order", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: userName || "Гость",
+        address: userAddress || "—",
+        orderText: text,
+        total: total,
+      }),
+    });
+    return true;
   } catch (e) {
-    alert("Ошибка отправки");
+    console.error("Ошибка:", e);
+    return false;
   }
 };
 const handleOrder = async () => {
@@ -194,7 +194,7 @@ const handleOrder = async () => {
   const message = `🛒 НОВЫЙ ЗАКАЗ!\n👤 ${userName}\n📧 ${userEmail}\n📍 ${userAddress}${zone}\n\n${list}\n💰 ИТОГО: ${total} ₽`;
 
   try {
-    await fetch("https://telegram-bot-sender.vercel.app/api/send", {
+    await fetch("https://oblako51-bot-mary17031725.waw0.amvera.tech/order", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify({
