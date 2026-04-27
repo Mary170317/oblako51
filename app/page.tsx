@@ -154,19 +154,7 @@ export default function Home() {
   const total = cart.reduce((s, i) => s + i.price * i.quantity, 0);
   const items = cart.reduce((s, i) => s + i.quantity, 0);
 
-  const sendTg = async (text: string) => {
-  try {
-    await fetch("https://oblako51-bot-mary17031725.waw0.amvera.tech/order", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text: text }),
-    });
-    return true;
-  } catch (e) {
-    console.error("Ошибка отправки в Telegram:", e);
-    return false;
-  }
-};
+
 const sendTg = async (text: string) => {
   try {
     await fetch("https://dostavka-mary17031725.waw0.amvera.tech/order", {
