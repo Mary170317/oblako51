@@ -1,0 +1,1342 @@
+[
+  {
+    "id": 1,
+    "name": "Яблоки",
+    "category": "fruits",
+    "price": 220,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=628ea19dcab2e3f87633e26ae0c3b8e803903887-4904401-images-thumbs&n=13",
+    "description": "Сочные красные яблоки. Богаты железом, витамином C и клетчаткой.",
+    "benefits": "❤️ Сердце | 🩸 Кровь | 🛡️ Иммунитет"
+  },
+  {
+    "id": 2,
+    "name": "Яблоки жёлтенькие",
+    "category": "fruits",
+    "price": 200,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=d8c7c27e4606b4b573a740ce46068594637eb64a-5314093-images-thumbs&n=13",
+    "description": "Сладкие жёлтые яблоки с нежной мякотью.",
+    "benefits": "👶 Дети | 🥗 Салаты | 💛 Настроение"
+  },
+  {
+    "id": 3,
+    "name": "Помело красное (в упаковке)",
+    "category": "fruits",
+    "price": 200,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=58ebf1ec313abfd86a181029269bafd09be46acf-12417143-images-thumbs&n=13",
+    "description": "Сладкое красное помело. Богато витамином C.",
+    "benefits": "💪 Сосуды | 🩺 Давление | ☀️ Витамин C"
+  },
+  {
+    "id": 4,
+    "name": "Помело",
+    "category": "fruits",
+    "price": 160,
+    "unit": "шт",
+    "image": "https://avatars.mds.yandex.net/i?id=957fa96d6a327d66b15ed0bb2d343c90ea621b8e-5669663-images-thumbs&n=13",
+    "description": "Классическое помело. Сочный цитрус.",
+    "benefits": "🧹 Детокс | ⚡ Энергия | 🌿 Пищеварение"
+  },
+  {
+    "id": 5,
+    "name": "Кукуруза китайская",
+    "category": "vegetables",
+    "price": 170,
+    "unit": "шт",
+    "image": "https://avatars.mds.yandex.net/i?id=d5a03a3d1ceb369b4afd2a0eb4cf3b6bbcc6bf6a-5237668-images-thumbs&n=13",
+    "description": "Сладкая китайская кукуруза.",
+    "benefits": "🌽 Клетчатка | ⚡ Энергия | 😋 Вкус"
+  },
+  {
+    "id": 6,
+    "name": "Яблоки жёлтые (побольше)",
+    "category": "fruits",
+    "price": 300,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=492897f0eee19df84dae630caafec2a003b76845-5163110-images-thumbs&n=13",
+    "description": "Крупные сладкие жёлтые яблоки.",
+    "benefits": "🍎 Вкус | 🍰 Десерты | 💛 Настроение"
+  },
+  {
+    "id": 7,
+    "name": "Яблоки маленькие зелёные (Семеренко)",
+    "category": "fruits",
+    "price": 200,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=bd61ebdc08124e419526471fb7d590d589a0bbac-4113334-images-thumbs&n=13",
+    "description": "Маленькие зелёные яблоки сорта Семеренко.",
+    "benefits": "🍏 Диета | 🔥 Метаболизм | 🦷 Зубы"
+  },
+  {
+    "id": 8,
+    "name": "Яблоки большие красные",
+    "category": "fruits",
+    "price": 230,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=8047ff0fb18f4d5f8a5f71ea52d0e556adcc0999-10698872-images-thumbs&n=13",
+    "description": "Крупные красные яблоки.",
+    "benefits": "❤️ Сердце | 🩸 Кровь | 🛡️ Иммунитет"
+  },
+  {
+    "id": 9,
+    "name": "Яблоки зелёные большие",
+    "category": "fruits",
+    "price": 280,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=03ad06d2e6ca2c9be44b90ac2d495ce75bc94411-4580062-images-thumbs&n=13",
+    "description": "Крупные зелёные яблоки.",
+    "benefits": "🍏 Клетчатка | 🦷 Зубы | 💚 Здоровье"
+  },
+  {
+    "id": 10,
+    "name": "Яблоки чуть поменьше",
+    "category": "fruits",
+    "price": 200,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=532ce6cddbc134ef40fbb69286f7d4ea9860ca14-5620050-images-thumbs&n=13",
+    "description": "Яблоки среднего размера.",
+    "benefits": "🍎 Универсальность | 😋 Вкус | 💪 Здоровье"
+  },
+  {
+    "id": 11,
+    "name": "Яблоки ещё поменьше",
+    "category": "fruits",
+    "price": 280,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=cb64a9981fbe808c5c114df9916acb6b5f148abb-5447262-images-thumbs&n=13",
+    "description": "Маленькие сладкие яблоки.",
+    "benefits": "👶 Дети | 🎒 Перекус | 🍎 Вкус"
+  },
+  {
+    "id": 12,
+    "name": "Апельсины",
+    "category": "fruits",
+    "price": 250,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=944ce199bc58c206f4e2bfed298362f59e57fb1c-5282838-images-thumbs&n=13",
+    "description": "Сладкие апельсины.",
+    "benefits": "🍊 Витамин C | 🔋 Бодрость | 🛡️ Защита"
+  },
+  {
+    "id": 13,
+    "name": "Груша",
+    "category": "fruits",
+    "price": 300,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=17bdee0602df4475d3a324dd0b18a2cb72081016-5452187-images-thumbs&n=13",
+    "description": "Сочная груша.",
+    "benefits": "🧠 Мозг | ❤️ Сердце | 🤰 Фолиевая кислота"
+  },
+  {
+    "id": 14,
+    "name": "Гранат Сири",
+    "category": "fruits",
+    "price": 450,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=a990ec3a591257614b34cb0bd3b210f8-5236341-images-thumbs&n=13",
+    "description": "Элитный сорт граната.",
+    "benefits": "🩸 Гемоглобин | ⏳ Молодость | 💪 Сосуды"
+  },
+  {
+    "id": 15,
+    "name": "Яблоко красное большое",
+    "category": "fruits",
+    "price": 300,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=8047ff0fb18f4d5f8a5f71ea52d0e556adcc0999-10698872-images-thumbs&n=13",
+    "description": "Огромное красное яблоко.",
+    "benefits": "🍎 Сытность | ❤️ Сердце | 😋 Вкус"
+  },
+  {
+    "id": 16,
+    "name": "Виноград японский зелёный",
+    "category": "fruits",
+    "price": 500,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=9867b9291448c4825b949b83c54f863befaaa829-10350400-images-thumbs&n=13",
+    "description": "Японский зелёный виноград.",
+    "benefits": "🍇 Антиоксиданты | ⏳ Молодость | 💚 Сердце"
+  },
+  {
+    "id": 17,
+    "name": "Виноград фиолетовый",
+    "category": "fruits",
+    "price": 490,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=363268a857e3170e5bda7c63f82d258f7d187faa-12439486-images-thumbs&n=13",
+    "description": "Фиолетовый виноград.",
+    "benefits": "🍇 Антиоксиданты | 💪 Сосуды | 😋 Вкус"
+  },
+  {
+    "id": 18,
+    "name": "Кишмиш Ташкент",
+    "category": "fruits",
+    "price": 290,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=cd8397ce9a219f8971d23966349f878253fcb9208a1aef05-12721850-images-thumbs&n=13",
+    "description": "Ташкентский кишмиш.",
+    "benefits": "🍇 Сладость | 👶 Дети | ☀️ Энергия"
+  },
+  {
+    "id": 19,
+    "name": "Кишмиш",
+    "category": "fruits",
+    "price": 280,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=771c788374574e018f84af3a93158e1fae9d7e9f-4949878-images-thumbs&n=13",
+    "description": "Мелкий кишмиш.",
+    "benefits": "🍇 Перекус | 😋 Вкус | ✨ Украшение"
+  },
+  {
+    "id": 20,
+    "name": "Грейпфрут",
+    "category": "fruits",
+    "price": 200,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=e3ed779462ceeb3b166a670ed599eb22e14c7a8a-3612431-images-thumbs&n=13",
+    "description": "Красный грейпфрут.",
+    "benefits": "🔥 Жир | ⚡ Метаболизм | 💪 Витамин C"
+  },
+  {
+    "id": 21,
+    "name": "Яблоки зелёные",
+    "category": "fruits",
+    "price": 250,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=bd61ebdc08124e419526471fb7d590d589a0bbac-4113334-images-thumbs&n=13",
+    "description": "Зелёные яблоки.",
+    "benefits": "🍏 Клетчатка | 🛡️ Иммунитет | 🦷 Зубы"
+  },
+  {
+    "id": 22,
+    "name": "Гранат (Узбекистан)",
+    "category": "fruits",
+    "price": 350,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=c4c0826ebf32a86aa25576c81a0e9c45c879d0c3-4860138-images-thumbs&n=13",
+    "description": "Спелый гранат из Узбекистана.",
+    "benefits": "🩸 Гемоглобин | ⏳ Молодость | 💪 Сосуды"
+  },
+  {
+    "id": 23,
+    "name": "Киви",
+    "category": "fruits",
+    "price": 350,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=c268698fb955645ca6fe6c6e3c518550-4483167-images-thumbs&n=13",
+    "description": "Пушистое киви.",
+    "benefits": "🥝 Витамин C | 🧹 Детокс | 🛡️ Иммунитет"
+  },
+  {
+    "id": 24,
+    "name": "Апельсин красный",
+    "category": "fruits",
+    "price": 250,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=cf57d03f76342572e92ef8ed3e2f2645b687a08a-4566903-images-thumbs&n=13",
+    "description": "Красный апельсин.",
+    "benefits": "🍊 Витамин C | 🔋 Бодрость | 🛡️ Защита"
+  },
+  {
+    "id": 25,
+    "name": "Груша Акхам",
+    "category": "fruits",
+    "price": 300,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=8937b6aed844d848dcd37f6b6c7683821dc1d02a-12752869-images-thumbs&n=13",
+    "description": "Сорт груши Акхам.",
+    "benefits": "🍐 Вкус | ❤️ Сердце | 💪 Здоровье"
+  },
+  {
+    "id": 26,
+    "name": "Яблоки красные",
+    "category": "fruits",
+    "price": 200,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=8047ff0fb18f4d5f8a5f71ea52d0e556adcc0999-10698872-images-thumbs&n=13",
+    "description": "Красные яблоки.",
+    "benefits": "❤️ Сердце | 🩸 Кровь | 🛡️ Иммунитет"
+  },
+  {
+    "id": 27,
+    "name": "Мандарин маленький",
+    "category": "fruits",
+    "price": 250,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=e2499ac0f28ba1bd4bf9c4179bbc36a10c3a790b-5236925-images-thumbs&n=13",
+    "description": "Маленькие сладкие мандарины.",
+    "benefits": "🍊 Витамин C | 😋 Вкус | 🛡️ Защита"
+  },
+  {
+    "id": 28,
+    "name": "Яблоки",
+    "category": "fruits",
+    "price": 190,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=628ea19dcab2e3f87633e26ae0c3b8e803903887-4904401-images-thumbs&n=13",
+    "description": "Свежие яблоки.",
+    "benefits": "🍎 Вкус | 💪 Здоровье | 🛡️ Иммунитет"
+  },
+  {
+    "id": 29,
+    "name": "Груша конференция",
+    "category": "fruits",
+    "price": 380,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=17bdee0602df4475d3a324dd0b18a2cb72081016-5452187-images-thumbs&n=13",
+    "description": "Сорт груши Конференция.",
+    "benefits": "🍐 Вкус | ❤️ Сердце | 💪 Здоровье"
+  },
+  {
+    "id": 30,
+    "name": "Лимон Ташкент",
+    "category": "fruits",
+    "price": 600,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=cf57d03f76342572e92ef8ed3e2f2645b687a08a-4566903-images-thumbs&n=13",
+    "description": "Ташкентский лимон.",
+    "benefits": "🍋 Витамин C | 🛡️ Иммунитет | ☀️ Энергия"
+  },
+  {
+    "id": 31,
+    "name": "Лимон жёлтый",
+    "category": "fruits",
+    "price": 550,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=cf57d03f76342572e92ef8ed3e2f2645b687a08a-4566903-images-thumbs&n=13",
+    "description": "Жёлтый лимон.",
+    "benefits": "🍋 Витамин C | 🛡️ Иммунитет | ☀️ Энергия"
+  },
+  {
+    "id": 32,
+    "name": "Ананас",
+    "category": "fruits",
+    "price": 300,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=f93d332af443e2105b5f152390c204ad50063f2d-5895977-images-thumbs&n=13",
+    "description": "Свежий ананас.",
+    "benefits": "🍍 Витамины | 🔥 Метаболизм | 😋 Вкус"
+  },
+  {
+    "id": 33,
+    "name": "Арбуз",
+    "category": "fruits",
+    "price": 135,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=e729177766e295c39c5d91355aba9dff9ed51eaf-5234784-images-thumbs&n=13",
+    "description": "Сладкий арбуз.",
+    "benefits": "🍉 Гидратация | ☀️ Лето | 😋 Вкус"
+  },
+  {
+    "id": 34,
+    "name": "Картошка",
+    "category": "vegetables",
+    "price": 50,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=32bedc32ad9df3a62c818fa51a8431ab2e33592d-4628144-images-thumbs&n=13",
+    "description": "Свежий картофель.",
+    "benefits": "💪 Калий | 🍽️ Сытность | 👨‍🍳 Универсальность"
+  },
+  {
+    "id": 35,
+    "name": "Огурец пупырчатый",
+    "category": "vegetables",
+    "price": 350,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=0fca52294901639595417c384e2443e8344d1140-5042164-images-thumbs&n=13",
+    "description": "Свежие пупырчатые огурцы.",
+    "benefits": "💧 Гидратация | 🥒 Диета | ✨ Кожа"
+  },
+  {
+    "id": 36,
+    "name": "Томат",
+    "category": "vegetables",
+    "price": 0,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=84e1983d2c86643e7a98934b28dc8b0aa098f3dc-12738621-images-thumbs&n=13",
+    "description": "Свежие томаты.",
+    "benefits": "❤️ Сердце | 🛡️ Защита | 🍅 Вкус"
+  },
+  {
+    "id": 37,
+    "name": "Болгарский перец",
+    "category": "vegetables",
+    "price": 350,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=05e3e8b3950b17e2aea5e93e2177c6f70876e609-9806046-images-thumbs&n=13",
+    "description": "Сладкий болгарский перец.",
+    "benefits": "👁️ Зрение | 💪 Сосуды | 🛡️ Иммунитет"
+  },
+  {
+    "id": 38,
+    "name": "Кабачки",
+    "category": "vegetables",
+    "price": 350,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=e31d6b97506ce8ab27d3e2e58fc30953801899fe-15547930-images-thumbs&n=13",
+    "description": "Нежные кабачки.",
+    "benefits": "🥒 Диета | 🧹 Пищеварение | 👶 Дети"
+  },
+  {
+    "id": 39,
+    "name": "Баклажаны",
+    "category": "vegetables",
+    "price": 350,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=b212eddb820d34c6c71d287281b295fe1f3c8c8a-12799632-images-thumbs&n=13",
+    "description": "Свежие баклажаны.",
+    "benefits": "⏳ Молодость | 🧠 Мозг | 🍆 Вкус"
+  },
+  {
+    "id": 40,
+    "name": "Капуста Айсберг",
+    "category": "vegetables",
+    "price": 350,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=814cb87e84b3ad79bc673d0745980916cd824d55-8497272-images-thumbs&n=13",
+    "description": "Хрустящая капуста Айсберг.",
+    "benefits": "🥗 Салаты | 💧 Свежесть | 🦷 Хруст"
+  },
+  {
+    "id": 41,
+    "name": "Капуста обычная",
+    "category": "vegetables",
+    "price": 85,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=e37785a5cb8f0c9d4c44ee84754add531b535c89-4570384-images-thumbs&n=13",
+    "description": "Белокочанная капуста.",
+    "benefits": "🥬 Витамин C | 🧹 Пищеварение | 💪 Здоровье"
+  },
+  {
+    "id": 42,
+    "name": "Капуста свежий урожай",
+    "category": "vegetables",
+    "price": 110,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=e37785a5cb8f0c9d4c44ee84754add531b535c89-4570384-images-thumbs&n=13",
+    "description": "Капуста свежего урожая.",
+    "benefits": "🥬 Витамин C | 🧹 Пищеварение | 💪 Здоровье"
+  },
+  {
+    "id": 43,
+    "name": "Тыква",
+    "category": "vegetables",
+    "price": 150,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=05ad49ce913638ba7bff375a876f42f1079af6f6-5310500-images-thumbs&n=13",
+    "description": "Сладкая тыква.",
+    "benefits": "👁️ Зрение | ✨ Кожа | 🎃 Вкус"
+  },
+  {
+    "id": 44,
+    "name": "Лук красный",
+    "category": "vegetables",
+    "price": 100,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=437da41199053ea6e9a09b67be2426b689ebc042-8223286-images-thumbs&n=13",
+    "description": "Сладкий красный лук.",
+    "benefits": "🛡️ Иммунитет | ❤️ Сердце | 🧅 Вкус"
+  },
+  {
+    "id": 45,
+    "name": "Лук белый",
+    "category": "vegetables",
+    "price": 90,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=ad39125feb58bae4be6c3480829c1d472cc48a27-9065942-images-thumbs&n=13",
+    "description": "Белый лук.",
+    "benefits": "🧅 Вкус | 🛡️ Иммунитет | 💪 Здоровье"
+  },
+  {
+    "id": 46,
+    "name": "Лук обычный маленький",
+    "category": "vegetables",
+    "price": 45,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=984718514cf9017149ccbcd9fee36ddd8a882d23-4469612-images-thumbs&n=13",
+    "description": "Репчатый лук.",
+    "benefits": "🧅 Универсальность | 🛡️ Иммунитет | 😋 Вкус"
+  },
+  {
+    "id": 47,
+    "name": "Морковка",
+    "category": "vegetables",
+    "price": 60,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=955a3a7faf1dae9910b4a7c8a22fca0cb39a73a2-5495450-images-thumbs&n=13",
+    "description": "Свежая морковь.",
+    "benefits": "👁️ Зрение | ✨ Кожа | 🥕 Вкус"
+  },
+  {
+    "id": 48,
+    "name": "Виноградные листья в воде",
+    "category": "vegetables",
+    "price": 230,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=9e6184cef4cde7e475a415be2a7f6b34ee65914d-12774514-images-thumbs&n=13",
+    "description": "Виноградные листья для долмы.",
+    "benefits": "🍃 Традиция | 😋 Вкус | 👨‍🍳 Готовка"
+  },
+  {
+    "id": 49,
+    "name": "Виноградные листья в банке без воды",
+    "category": "vegetables",
+    "price": 200,
+    "unit": "банка",
+    "image": "https://avatars.mds.yandex.net/i?id=9e6184cef4cde7e475a415be2a7f6b34ee65914d-12774514-images-thumbs&n=13",
+    "description": "Виноградные листья в банке.",
+    "benefits": "🍃 Традиция | 😋 Вкус | 👨‍🍳 Готовка"
+  },
+  {
+    "id": 50,
+    "name": "Перцы маринованные",
+    "category": "vegetables",
+    "price": 180,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=cce312dcf09ced0bcfe45223af36e2054eb8b4f1-10108140-images-thumbs&n=13",
+    "description": "Маринованные перцы с аджикой.",
+    "benefits": "🌶️ Острота | 😋 Вкус | 🍽️ Закуска"
+  },
+  {
+    "id": 51,
+    "name": "Кешью жареный",
+    "category": "nuts",
+    "price": 125,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=c11b326259d48c9cf0f74947a3b2427686ba5526-4370398-images-thumbs&n=13",
+    "description": "Жареный кешью.",
+    "benefits": "💪 Мышцы | 🧠 Нервы | 🦴 Кости"
+  },
+  {
+    "id": 52,
+    "name": "Кешью в скорлупе",
+    "category": "nuts",
+    "price": 130,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=58fbf228fafaef9e4c8353142ea11c5bfd06e9bb-3765206-images-thumbs&n=13",
+    "description": "Кешью в скорлупе.",
+    "benefits": "💪 Мышцы | 🧠 Нервы | 🦴 Кости"
+  },
+  {
+    "id": 53,
+    "name": "Кешью",
+    "category": "nuts",
+    "price": 120,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=f3839c24aceaf5f111b294a6b4d3b8684926e7ae-4228230-images-thumbs&n=13",
+    "description": "Натуральный кешью.",
+    "benefits": "💪 Мышцы | 🧠 Нервы | 🦴 Кости"
+  },
+  {
+    "id": 54,
+    "name": "Бразильский орех",
+    "category": "nuts",
+    "price": 250,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=782b3e981c97b0d5850ddd9a3cc7bbab753c8c7f970d4629-7063851-images-thumbs&n=13",
+    "description": "Бразильский орех.",
+    "benefits": "🧠 Мозг | 🛡️ Иммунитет | 💪 Здоровье"
+  },
+  {
+    "id": 55,
+    "name": "Фундук",
+    "category": "nuts",
+    "price": 150,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=b231d2b7a43667c1d779465f25f2f2a542c8e02a-12267805-images-thumbs&n=13",
+    "description": "Лесной фундук.",
+    "benefits": "🧠 Память | ❤️ Сердце | ✨ Кожа"
+  },
+  {
+    "id": 56,
+    "name": "Орех грецкий (Киргизия)",
+    "category": "nuts",
+    "price": 85,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=b8bc7bf3f46cede9858636e0f057acd5cd68a7a4-8526247-images-thumbs&n=13",
+    "description": "Грецкий орех из Киргизии.",
+    "benefits": "🧠 Мозг | ❤️ Сердце | 🦴 Кости"
+  },
+  {
+    "id": 57,
+    "name": "Орех грецкий",
+    "category": "nuts",
+    "price": 80,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=d890e4c2467f6bb3139d37859abb35dfbdecc573-2896823-images-thumbs&n=13",
+    "description": "Грецкий орех.",
+    "benefits": "🧠 Мозг | ❤️ Сердце | 🦴 Кости"
+  },
+  {
+    "id": 58,
+    "name": "Фисташки солёные",
+    "category": "nuts",
+    "price": 150,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=af23b04dac121751edd89935ff4c37ab6bb24107-12346502-images-thumbs&n=13",
+    "description": "Солёные фисташки.",
+    "benefits": "😊 Настроение | 💪 Белок | ❤️ Сердце"
+  },
+  {
+    "id": 59,
+    "name": "Фисташки Турция",
+    "category": "nuts",
+    "price": 2300,
+    "unit": "кг",
+    "image": "https://avatars.mds.yandex.net/i?id=af23b04dac121751edd89935ff4c37ab6bb24107-12346502-images-thumbs&n=13",
+    "description": "Турецкие фисташки.",
+    "benefits": "😊 Настроение | 💪 Белок | ❤️ Сердце"
+  },
+  {
+    "id": 60,
+    "name": "Фисташки обычные",
+    "category": "nuts",
+    "price": 130,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=af23b04dac121751edd89935ff4c37ab6bb24107-12346502-images-thumbs&n=13",
+    "description": "Обычные фисташки.",
+    "benefits": "😊 Настроение | 💪 Белок | ❤️ Сердце"
+  },
+  {
+    "id": 61,
+    "name": "Фисташки с куркумой",
+    "category": "nuts",
+    "price": 140,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=3250128c345a55e73360bd35d755b29dcdaa577c-12345551-images-thumbs&n=13",
+    "description": "Фисташки с куркумой.",
+    "benefits": "😊 Настроение | 🛡️ Иммунитет | ❤️ Сердце"
+  },
+  {
+    "id": 62,
+    "name": "Миндаль в скорлупе",
+    "category": "nuts",
+    "price": 100,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=ec53e624a27aa732a7c02c98a90684ce266816aa-12666658-images-thumbs&n=13",
+    "description": "Миндаль в скорлупе.",
+    "benefits": "🦴 Кости | 🦷 Зубы | 💪 Белок"
+  },
+  {
+    "id": 63,
+    "name": "Миндаль нежареный",
+    "category": "nuts",
+    "price": 110,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=1aa553876fd5d7f80eec0e1a4196e0f21c088f08-6968705-images-thumbs&n=13",
+    "description": "Нежареный миндаль.",
+    "benefits": "🦴 Кости | 🦷 Зубы | 💪 Белок"
+  },
+  {
+    "id": 64,
+    "name": "Миндаль жареный",
+    "category": "nuts",
+    "price": 120,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=f5f43662029c26d615235443f01e95c666f6557f-16302568-images-thumbs&n=13",
+    "description": "Жареный миндаль.",
+    "benefits": "🦴 Кости | 🦷 Зубы | 💪 Белок"
+  },
+  {
+    "id": 65,
+    "name": "Изюм",
+    "category": "nuts",
+    "price": 120,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=76fce12423dad9d98b1cc24895b4d9cf2a069ace-5340195-images-thumbs&n=13",
+    "description": "Сладкий изюм.",
+    "benefits": "🩸 Кровь | 🦴 Кости | ⚡ Энергия"
+  },
+  {
+    "id": 66,
+    "name": "Изюм иранский (жёлтый)",
+    "category": "nuts",
+    "price": 60,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=76fce12423dad9d98b1cc24895b4d9cf2a069ace-5340195-images-thumbs&n=13",
+    "description": "Иранский жёлтый изюм.",
+    "benefits": "🩸 Кровь | 🦴 Кости | ⚡ Энергия"
+  },
+  {
+    "id": 67,
+    "name": "Орех солёный",
+    "category": "nuts",
+    "price": 45,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=bda01087a106363cecf4252d29f5d8c20bbe66f4-13212321-images-thumbs&n=13",
+    "description": "Солёный орех.",
+    "benefits": "😋 Вкус | ⚡ Энергия | 💪 Белок"
+  },
+  {
+    "id": 68,
+    "name": "Арахис нежареный",
+    "category": "nuts",
+    "price": 30,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=2f0170b45da6f994fb774b79f220cd32930c290a-4012073-images-thumbs&n=13",
+    "description": "Нежареный арахис.",
+    "benefits": "💪 Белок | ⚡ Энергия | 😋 Вкус"
+  },
+  {
+    "id": 69,
+    "name": "Арахис жареный",
+    "category": "nuts",
+    "price": 45,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=94b5a6535b08bf1e6bf68f0012ecc0083fb7b9e8-3910357-images-thumbs&n=13",
+    "description": "Жареный арахис.",
+    "benefits": "💪 Белок | ⚡ Энергия | 😋 Вкус"
+  },
+  {
+    "id": 70,
+    "name": "Ореховый микс",
+    "category": "nuts",
+    "price": 120,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=4b2b3b9a1df33850ba83e8ba2bbec40a3967a2a8-12494956-images-thumbs&n=13",
+    "description": "Ореховый микс.",
+    "benefits": "💪 Белок | 🧠 Мозг | ❤️ Сердце"
+  },
+  {
+    "id": 71,
+    "name": "Арахис в кунжуте",
+    "category": "nuts",
+    "price": 50,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=8776c24f217359e025fe89b14b2f1e8421364c18-5665339-images-thumbs&n=13",
+    "description": "Арахис в кунжуте.",
+    "benefits": "😋 Вкус | ⚡ Энергия | 💪 Белок"
+  },
+  {
+    "id": 72,
+    "name": "Арахис в сахаре",
+    "category": "nuts",
+    "price": 45,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=79526de699e21afb67c385d85d2f5b57afa3eaaa-4569264-images-thumbs&n=13",
+    "description": "Арахис в сахаре.",
+    "benefits": "😋 Вкус | ⚡ Энергия | 🍬 Сладость"
+  },
+  {
+    "id": 73,
+    "name": "Фруктовая смесь",
+    "category": "nuts",
+    "price": 35,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=b7ff346e3179a32eb2826cf1d4d6a37897145d5f-7012253-images-thumbs&n=13",
+    "description": "Фруктовая смесь.",
+    "benefits": "🍎 Витамины | ⚡ Энергия | 😋 Вкус"
+  },
+  {
+    "id": 74,
+    "name": "Сухофрукты",
+    "category": "nuts",
+    "price": 20,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=ddefa84f659a724c10830d452c22cd17af45233a-9234963-images-thumbs&n=13",
+    "description": "Ассорти сухофруктов.",
+    "benefits": "🍎 Витамины | ⚡ Энергия | 😋 Вкус"
+  },
+  {
+    "id": 75,
+    "name": "Орех в скорлупе",
+    "category": "nuts",
+    "price": 45,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=bda01087a106363cecf4252d29f5d8c20bbe66f4-13212321-images-thumbs&n=13",
+    "description": "Орех в скорлупе.",
+    "benefits": "💪 Белок | 🧠 Мозг | 😋 Вкус"
+  },
+  {
+    "id": 76,
+    "name": "Семечки",
+    "category": "nuts",
+    "price": 20,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=84d736f2094b76933bbc1e1690b6343a0124ca90-4825391-images-thumbs&n=13",
+    "description": "Жареные семечки.",
+    "benefits": "😋 Вкус | ⚡ Энергия | 🧠 Мозг"
+  },
+  {
+    "id": 77,
+    "name": "Макадамия",
+    "category": "nuts",
+    "price": 90,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=8289ed3d3880509ba70529cbf03d8d0abe64b4d4-4011747-images-thumbs&n=13",
+    "description": "Орех макадамия.",
+    "benefits": "❤️ Сердце | 🧠 Мозг | ✨ Кожа"
+  },
+  {
+    "id": 78,
+    "name": "Семечки полосатые",
+    "category": "nuts",
+    "price": 25,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=55bf1005182f9daafba15aa48c795bc004ac9eb2-12544206-images-thumbs&n=13",
+    "description": "Полосатые семечки.",
+    "benefits": "😋 Вкус | ⚡ Энергия | 🧠 Мозг"
+  },
+  {
+    "id": 79,
+    "name": "Тыквенные семечки",
+    "category": "nuts",
+    "price": 55,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=55266dc77282172c70a1132d7d93b00b79608997-5239765-images-thumbs&n=13",
+    "description": "Тыквенные семечки.",
+    "benefits": "💪 Цинк | 🧠 Мозг | ❤️ Сердце"
+  },
+  {
+    "id": 80,
+    "name": "Изюм",
+    "category": "nuts",
+    "price": 50,
+    "unit": "100 г",
+    "image": "https://avatars.mds.yandex.net/i?id=76fce12423dad9d98b1cc24895b4d9cf2a069ace-5340195-images-thumbs&n=13",
+    "description": "Сладкий изюм.",
+    "benefits": "🩸 Кровь | 🦴 Кости | ⚡ Энергия"
+  },
+  {
+    "id": 81,
+    "name": "Лагман дунганский",
+    "category": "grocery",
+    "price": 150,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=d3ec8f6d30afcd908ce18cccd82bc3c6c6a87821-9386274-images-thumbs&n=13",
+    "description": "Настоящий дунганский лагман.",
+    "benefits": "🍜 Вкус | ⏱️ Быстро | 👨‍🍳 Удобство"
+  },
+  {
+    "id": 82,
+    "name": "Лапша для гарнира",
+    "category": "grocery",
+    "price": 150,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=6fc8752bb7217307c5a7b336219cda15a00491c5-5910573-images-thumbs&n=13",
+    "description": "Лапша для гарнира.",
+    "benefits": "🍜 Вкус | ⏱️ Быстро | 👨‍🍳 Удобство"
+  },
+  {
+    "id": 83,
+    "name": "Лапша к мясу по-казахски",
+    "category": "grocery",
+    "price": 150,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=e4c96978a97eb7da1158cbeb9ce4e2a1cb399106-13082451-images-thumbs&n=13",
+    "description": "Лапша к мясу по-казахски.",
+    "benefits": "🍜 Вкус | ⏱️ Быстро | 👨‍🍳 Удобство"
+  },
+  {
+    "id": 84,
+    "name": "Лапша уйгурская",
+    "category": "grocery",
+    "price": 150,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=fec09cb5884a7db4735006dcd745195c665807fa-12500826-images-thumbs&n=13",
+    "description": "Уйгурская лапша.",
+    "benefits": "🍜 Вкус | ⏱️ Быстро | 👨‍🍳 Удобство"
+  },
+  {
+    "id": 85,
+    "name": "Лапша домашняя особо тонкая",
+    "category": "grocery",
+    "price": 120,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=4b13924fa2e6d7d63733cef1e8a545c0a8119de9-4372726-images-thumbs&n=13",
+    "description": "Домашняя тонкая лапша.",
+    "benefits": "🍜 Вкус | ⏱️ Быстро | 👨‍🍳 Удобство"
+  },
+  {
+    "id": 86,
+    "name": "Лапша тонкая для бешбармака",
+    "category": "grocery",
+    "price": 120,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=9f98199ac121da6bdd410ea2a10ff0b4768f39d8-5887023-images-thumbs&n=13",
+    "description": "Лапша для бешбармака.",
+    "benefits": "🍜 Вкус | ⏱️ Быстро | 👨‍🍳 Удобство"
+  },
+  {
+    "id": 87,
+    "name": "Чай зелёный «Азерчай» (200 г)",
+    "category": "grocery",
+    "price": 250,
+    "unit": "200 г",
+    "image": "https://avatars.mds.yandex.net/i?id=3e57cb791634d9171466ecc8394ac02a836aa5f2-12627675-images-thumbs&n=13",
+    "description": "Ароматный зелёный чай.",
+    "benefits": "🍵 Антиоксиданты | ❤️ Сердце | ⚡ Бодрость"
+  },
+  {
+    "id": 88,
+    "name": "Чай чёрный «Азерчай» (200 г)",
+    "category": "grocery",
+    "price": 250,
+    "unit": "200 г",
+    "image": "https://avatars.mds.yandex.net/i?id=791d5ebf66fe24b7d97e3a1bea356b83325d1a51-5232827-images-thumbs&n=13",
+    "description": "Классический чёрный чай.",
+    "benefits": "🍵 Бодрость | ❤️ Сердце | ☀️ Энергия"
+  },
+  {
+    "id": 89,
+    "name": "Чай чёрный «Азерчай» (больше 200 г)",
+    "category": "grocery",
+    "price": 300,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=5a3e22b34d5edfd860ef557cd2a1cce7e1913b73-2816445-images-thumbs&n=13",
+    "description": "Чёрный чай большая упаковка.",
+    "benefits": "🍵 Бодрость | ❤️ Сердце | ☀️ Энергия"
+  },
+  {
+    "id": 90,
+    "name": "Maryam Gold Молочный",
+    "category": "grocery",
+    "price": 300,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=32648004e9d3e52d0b677c43f60324dcd2fe46f3-17698047-images-thumbs&n=13",
+    "description": "Чай Maryam Gold Молочный.",
+    "benefits": "🍵 Вкус | ☀️ Энергия | 😋 Наслаждение"
+  },
+  {
+    "id": 91,
+    "name": "Maryam Gold Вечерний",
+    "category": "grocery",
+    "price": 300,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=9f1e85ac1e0d31ae74182bfb041bfd8f2ddacb67-6950859-images-thumbs&n=13",
+    "description": "Чай Maryam Gold Вечерний.",
+    "benefits": "🍵 Спокойствие | 🌙 Сон | 😋 Вкус"
+  },
+  {
+    "id": 92,
+    "name": "Marianne Gold Молочный улгун",
+    "category": "grocery",
+    "price": 260,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=0c875b69c4f53a8f16c949c09fa58d6f8dc3c319-4843806-images-thumbs&n=13",
+    "description": "Чай Marianne Gold Молочный.",
+    "benefits": "🍵 Вкус | ☀️ Энергия | 😋 Наслаждение"
+  },
+  {
+    "id": 93,
+    "name": "Gold Закат Кении",
+    "category": "grocery",
+    "price": 250,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=dc309d362f31bb50ccd00005b6081b0c71b007c7-4908127-images-thumbs&n=13",
+    "description": "Чай Закат Кении.",
+    "benefits": "🍵 Вкус | ☀️ Энергия | 🌍 Кения"
+  },
+  {
+    "id": 94,
+    "name": "Пикой Пуро Кейлан Ти",
+    "category": "grocery",
+    "price": 350,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=d3c9c08c7fdc0b8aba23dcac691e988ad9b5c5a7-12484816-images-thumbs&n=13",
+    "description": "Элитный чай Пикой Пуро.",
+    "benefits": "🍵 Вкус | ☀️ Энергия | 😋 Наслаждение"
+  },
+  {
+    "id": 95,
+    "name": "Орда Кения",
+    "category": "grocery",
+    "price": 250,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=25e99611c5ebe5e3fe9484ae03cba0e11626633a-10929043-images-thumbs&n=13",
+    "description": "Чай Орда Кения.",
+    "benefits": "🍵 Вкус | ☀️ Энергия | 🌍 Кения"
+  },
+  {
+    "id": 96,
+    "name": "Акам",
+    "category": "grocery",
+    "price": 300,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=445d0a633458b25f2dce97321cdb4b86d0325477-9106703-images-thumbs&n=13",
+    "description": "Чай Акам.",
+    "benefits": "🍵 Вкус | ☀️ Энергия | 😋 Наслаждение"
+  },
+  {
+    "id": 97,
+    "name": "Асам",
+    "category": "grocery",
+    "price": 300,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=445d0a633458b25f2dce97321cdb4b86d0325477-9106703-images-thumbs&n=13",
+    "description": "Чай Асам.",
+    "benefits": "🍵 Вкус | ☀️ Энергия | 😋 Наслаждение"
+  },
+  {
+    "id": 98,
+    "name": "Чай «Пиала»",
+    "category": "grocery",
+    "price": 300,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=6714f9a1fbe19151d6cd27e2e6d98a672f4ed8a1-5906397-images-thumbs&n=13",
+    "description": "Чай Пиала.",
+    "benefits": "🍵 Вкус | ☀️ Энергия | 😋 Наслаждение"
+  },
+  {
+    "id": 99,
+    "name": "Мария Премиум",
+    "category": "grocery",
+    "price": 260,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=ef42a252c83d3f5be6882e9bda8a462716e77a3d-17844163-images-thumbs&n=13",
+    "description": "Чай Мария Премиум.",
+    "benefits": "🍵 Вкус | ☀️ Энергия | 😋 Наслаждение"
+  },
+  {
+    "id": 100,
+    "name": "Саладин Премиум",
+    "category": "grocery",
+    "price": 260,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=b51a90578a83f675979cfc287c23659d85366992-5239515-images-thumbs&n=13",
+    "description": "Чай Саладин Премиум.",
+    "benefits": "🍵 Вкус | ☀️ Энергия | 😋 Наслаждение"
+  },
+  {
+    "id": 101,
+    "name": "Медиа",
+    "category": "grocery",
+    "price": 280,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=6714f9a1fbe19151d6cd27e2e6d98a672f4ed8a1-5906397-images-thumbs&n=13",
+    "description": "Чай Медиа.",
+    "benefits": "🍵 Вкус | ☀️ Энергия | 😋 Наслаждение"
+  },
+  {
+    "id": 102,
+    "name": "Шампиньон (чай зелёный)",
+    "category": "grocery",
+    "price": 270,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=3e57cb791634d9171466ecc8394ac02a836aa5f2-12627675-images-thumbs&n=13",
+    "description": "Зелёный чай Шампиньон.",
+    "benefits": "🍵 Антиоксиданты | ☀️ Энергия | 😋 Вкус"
+  },
+  {
+    "id": 103,
+    "name": "Чай зелёный Мэри",
+    "category": "grocery",
+    "price": 360,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=97e52189df7cb25d5b23278741deb3b38c100c54b3c371e5-12985844-images-thumbs&n=13",
+    "description": "Чай зелёный Мэри.",
+    "benefits": "🍵 Антиоксиданты | ☀️ Энергия | 😋 Вкус"
+  },
+  {
+    "id": 104,
+    "name": "Орда (чай чёрный)",
+    "category": "grocery",
+    "price": 350,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=25e99611c5ebe5e3fe9484ae03cba0e11626633a-10929043-images-thumbs&n=13",
+    "description": "Чёрный чай Орда.",
+    "benefits": "🍵 Бодрость | ☀️ Энергия | 😋 Вкус"
+  },
+  {
+    "id": 105,
+    "name": "Пиала (100 пакетиков)",
+    "category": "grocery",
+    "price": 300,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=6714f9a1fbe19151d6cd27e2e6d98a672f4ed8a1-5906397-images-thumbs&n=13",
+    "description": "Чай Пиала в пакетиках.",
+    "benefits": "🍵 Удобство | ☀️ Энергия | 😋 Вкус"
+  },
+  {
+    "id": 106,
+    "name": "Твой чай",
+    "category": "grocery",
+    "price": 330,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=791d5ebf66fe24b7d97e3a1bea356b83325d1a51-5232827-images-thumbs&n=13",
+    "description": "Чай Твой чай.",
+    "benefits": "🍵 Бодрость | ☀️ Энергия | 😋 Вкус"
+  },
+  {
+    "id": 107,
+    "name": "Чай крупнолистовой кенийский",
+    "category": "grocery",
+    "price": 350,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=25e99611c5ebe5e3fe9484ae03cba0e11626633a-10929043-images-thumbs&n=13",
+    "description": "Кенийский крупнолистовой чай.",
+    "benefits": "🍵 Бодрость | ☀️ Энергия | 😋 Вкус"
+  },
+  {
+    "id": 108,
+    "name": "Султан чай Лимон",
+    "category": "grocery",
+    "price": 100,
+    "unit": "упак",
+    "image": "https://avatars.mds.yandex.net/i?id=791d5ebf66fe24b7d97e3a1bea356b83325d1a51-5232827-images-thumbs&n=13",
+    "description": "Чай Султан с лимоном.",
+    "benefits": "🍵 Вкус | ☀️ Энергия | 🍋 Лимон"
+  },
+  {
+    "id": 110,
+    "name": "FLavis гранатовый",
+    "category": "drinks",
+    "price": 150,
+    "unit": "0.5 л",
+    "image": "https://avatars.mds.yandex.net/i?id=970114254e7eaa2949b6aaf8341482a5a5cb016e-10099509-images-thumbs&n=13",
+    "description": "FLavis со вкусом граната.",
+    "benefits": "🥤 Освежение | ☀️ Жара | 🍎 Гранат"
+  },
+  {
+    "id": 111,
+    "name": "FLavis Лайм",
+    "category": "drinks",
+    "price": 150,
+    "unit": "0.5 л",
+    "image": "https://avatars.mds.yandex.net/i?id=724e386e27fa6b9954891efcb37d1fdb7c00535f-4568431-images-thumbs&n=13",
+    "description": "FLavis со вкусом лайма.",
+    "benefits": "🥤 Освежение | ☀️ Жара | 🍋 Лайм"
+  },
+  {
+    "id": 116,
+    "name": "R/C Кола 1,5 л",
+    "category": "drinks",
+    "price": 200,
+    "unit": "1,5 л",
+    "image": "https://avatars.mds.yandex.net/i?id=2b1a650df6c579b677a26386e2ccfe10e95df475-5339293-images-thumbs&n=13",
+    "description": "R/C Кола.",
+    "benefits": "🥤 Освежение | ☀️ Жара | 😋 Вкус"
+  },
+  {
+    "id": 117,
+    "name": "R/C Яблоко 1,5 л",
+    "category": "drinks",
+    "price": 200,
+    "unit": "1,5 л",
+    "image": "https://avatars.mds.yandex.net/i?id=a4facb2a370a262f745138dd2ae46fa632827f07-4560215-images-thumbs&n=13",
+    "description": "R/C со вкусом яблока.",
+    "benefits": "🥤 Освежение | ☀️ Жара | 🍎 Вкус"
+  },
+  {
+    "id": 118,
+    "name": "R/C Апельсин 1,5 л",
+    "category": "drinks",
+    "price": 200,
+    "unit": "1,5 л",
+    "image": "https://avatars.mds.yandex.net/i?id=b2ee15d84ef1a73b63bf878350bce8e2961dc3ec-4824873-images-thumbs&n=13",
+    "description": "R/C со вкусом апельсина.",
+    "benefits": "🥤 Освежение | ☀️ Жара | 🍊 Вкус"
+  },
+  {
+    "id": 119,
+    "name": "R/C Кола 1 л",
+    "category": "drinks",
+    "price": 150,
+    "unit": "1 л",
+    "image": "https://avatars.mds.yandex.net/i?id=2b1a650df6c579b677a26386e2ccfe10e95df475-5339293-images-thumbs&n=13",
+    "description": "R/C Кола 1 литр.",
+    "benefits": "🥤 Освежение | ☀️ Жара | 😋 Вкус"
+  },
+  {
+    "id": 120,
+    "name": "R/C Яблоко 1 л",
+    "category": "drinks",
+    "price": 150,
+    "unit": "1 л",
+    "image": "https://avatars.mds.yandex.net/i?id=a4facb2a370a262f745138dd2ae46fa632827f07-4560215-images-thumbs&n=13",
+    "description": "R/C со вкусом яблока 1 литр.",
+    "benefits": "🥤 Освежение | ☀️ Жара | 🍎 Вкус"
+  },
+  {
+    "id": 121,
+    "name": "R/C Апельсин 1 л",
+    "category": "drinks",
+    "price": 150,
+    "unit": "1 л",
+    "image": "https://avatars.mds.yandex.net/i?id=b2ee15d84ef1a73b63bf878350bce8e2961dc3ec-4824873-images-thumbs&n=13",
+    "description": "R/C со вкусом апельсина 1 литр.",
+    "benefits": "🥤 Освежение | ☀️ Жара | 🍊 Вкус"
+  },
+  {
+    "id": 122,
+    "name": "Спринг Яблоко",
+    "category": "drinks",
+    "price": 140,
+    "unit": "0,5 л",
+    "image": "https://avatars.mds.yandex.net/i?id=8e344ed5776b15718cc89d67840f043ea8f6b630-5220483-images-thumbs&n=13",
+    "description": "Спринг со вкусом яблока.",
+    "benefits": "🥤 Освежение | ☀️ Жара | 🍎 Вкус"
+  },
+  {
+    "id": 123,
+    "name": "Спринг Мульти фрукт",
+    "category": "drinks",
+    "price": 140,
+    "unit": "0,5 л",
+    "image": "https://avatars.mds.yandex.net/i?id=f123f2c7df198c47c211fdcf04d001c399fb5d81-5354769-images-thumbs&n=13",
+    "description": "Спринг мультифрукт.",
+    "benefits": "🥤 Освежение | ☀️ Жара | 🍎🍊🍇 Вкус"
+  },
+  {
+    "id": 124,
+    "name": "Спринг Вишня",
+    "category": "drinks",
+    "price": 140,
+    "unit": "0,5 л",
+    "image": "https://avatars.mds.yandex.net/i?id=c680dfd1ce412b211426c105c2ba0d81e5ff6f7f-10350400-images-thumbs&n=13",
+    "description": "Спринг со вкусом вишни.",
+    "benefits": "🥤 Освежение | ☀️ Жара | 🍒 Вкус"
+  },
+  {
+    "id": 127,
+    "name": "Карачинский 0,5 л",
+    "category": "drinks",
+    "price": 45,
+    "unit": "0,5 л",
+    "image": "https://avatars.mds.yandex.net/i?id=b2d5bc968057c149ae4151057b2da2b30b07d9ef-5233155-images-thumbs&n=13",
+    "description": "Минеральная вода Карачинский.",
+    "benefits": "💧 Минералы | 🧹 Детокс | 💪 Здоровье"
+  },
+  {
+    "id": 128,
+    "name": "Сибирский бор 0,5 л",
+    "category": "drinks",
+    "price": 35,
+    "unit": "0,5 л",
+    "image": "https://avatars.mds.yandex.net/i?id=3328772fe14159451c26bec4f3de7f1dd8f8dfd6-5355267-images-thumbs&n=13",
+    "description": "Минеральная вода Сибирский бор.",
+    "benefits": "💧 Минералы | 🧹 Детокс | 💪 Здоровье"
+  },
+  {
+    "id": 129,
+    "name": "Сибирский бор 1,5 л",
+    "category": "drinks",
+    "price": 75,
+    "unit": "1,5 л",
+    "image": "https://avatars.mds.yandex.net/i?id=39e13dec8e11eb20756031ff72b04f73390dcc52-12753003-images-thumbs&n=13",
+    "description": "Минеральная вода Сибирский бор.",
+    "benefits": "💧 Минералы | 🧹 Детокс | 💪 Здоровье"
+  },
+  {
+    "id": 130,
+    "name": "Кока-Кола",
+    "category": "drinks",
+    "price": 100,
+    "unit": "банка",
+    "image": "https://avatars.mds.yandex.net/i?id=7624f39b70b0f43c1325cb46c7270e8955c23aa4-5577672-images-thumbs&n=13",
+    "description": "Классическая Кока-Кола.",
+    "benefits": "🥤 Освежение | ☀️ Жара | 😋 Вкус"
+  },
+  {
+    "id": 131,
+    "name": "Миринда",
+    "category": "drinks",
+    "price": 100,
+    "unit": "банка",
+    "image": "https://avatars.mds.yandex.net/i?id=40d7e0b23b2523c0237a0f249f0d11ece768cece-9065885-images-thumbs&n=13",
+    "description": "Цитрусовая Миранда.",
+    "benefits": "🥤 Освежение | ☀️ Жара | 😋 Вкус"
+  },
+  {
+    "id": 132,
+    "name": "RC",
+    "category": "drinks",
+    "price": 90,
+    "unit": "банка",
+    "image": "https://avatars.mds.yandex.net/i?id=8683ea5b3458fe60b6eec00e7dae6bc0de503183-5651721-images-thumbs&n=13",
+    "description": "RC Cola.",
+    "benefits": "🥤 Освежение | ☀️ Жара | 😋 Вкус"
+  },
+  {
+    "id": 133,
+    "name": "RC Яблоко (газировка)",
+    "category": "drinks",
+    "price": 90,
+    "unit": "банка",
+    "image": "https://avatars.mds.yandex.net/i?id=875ccb64dcf050370250b41535544792304bfe3d-12651879-images-thumbs&n=13",
+    "description": "Газировка со вкусом яблока.",
+    "benefits": "🥤 Освежение | ☀️ Жара | 🍎 Вкус"
+  },
+  {
+    "id": 134,
+    "name": "Маршмелло",
+    "category": "drinks",
+    "price": 90,
+    "unit": "банка",
+    "image": "https://avatars.mds.yandex.net/i?id=861fd0af0eaf5ab1c95edf0f9d8cf1ebb8cbca8d-10917150-images-thumbs&n=13",
+    "description": "Газировка Маршмелло.",
+    "benefits": "🥤 Освежение | ☀️ Жара | 😋 Вкус"
+  },
+  {
+    "id": 135,
+    "name": "Мульти фрукт",
+    "category": "drinks",
+    "price": 90,
+    "unit": "банка",
+    "image": "https://ir-5.ozone.ru/s3/multimedia-1-h/wc1000/7628617925.jpg",
+    "description": "Мультифруктовый напиток.",
+    "benefits": "🥤 Освежение | ☀️ Жара | 🍎🍊🍇 Вкус"
+  },
+  {
+    "id": 136,
+    "name": "Манго",
+    "category": "drinks",
+    "price": 90,
+    "unit": "банка",
+    "image": "https://avatars.mds.yandex.net/get-mpic/17732613/2a0000019af02f5edcd80d05b5b293a3d4d7/optimize",
+    "description": "Газировка со вкусом манго.",
+    "benefits": "🥤 Освежение | ☀️ Жара | 🥭 Вкус"
+  },
+  {
+    "id": 137,
+    "name": "Боржоми",
+    "category": "drinks",
+    "price": 90,
+    "unit": "банка",
+    "image": "https://avatars.mds.yandex.net/i?id=e83da8730f0b677196f0a7e713078de5c07ced4d-4533435-images-thumbs&n=13",
+    "description": "Минеральная вода Боржоми.",
+    "benefits": "💧 Минералы | 🧹 Детокс | 💪 Здоровье"
+  },
+  {
+    "id": 138,
+    "name": "Бёрн",
+    "category": "drinks",
+    "price": 150,
+    "unit": "банка",
+    "image": "https://avatars.mds.yandex.net/i?id=27d5ae05262ba88d03815366b4163873df1c61b9-4571642-images-thumbs&n=13",
+    "description": "Энергетический напиток Бёрн.",
+    "benefits": "⚡ Энергия | 🧠 Концентрация | 🔥 Бодрость"
+  },
+  {
+    "id": 139,
+    "name": "Кока-Кола (330 мл)",
+    "category": "drinks",
+    "price": 90,
+    "unit": "банка",
+    "image": "https://avatars.mds.yandex.net/i?id=de4db626d181bf21de7fc3b1710abc8382c77b6e-4033702-images-thumbs&n=13",
+    "description": "Кока-Кола маленькая банка.",
+    "benefits": "🥤 Освежение | ☀️ Жара | 😋 Вкус"
+  },
+  {
+    "id": 140,
+    "name": "Фанта (330 мл)",
+    "category": "drinks",
+    "price": 90,
+    "unit": "банка",
+    "image": "https://avatars.mds.yandex.net/i?id=bdb3f9692e8a66329ec5292a6ba706469b17ed4e-5555978-images-thumbs&n=13",
+    "description": "Фанта маленькая банка.",
+    "benefits": "🥤 Освежение | ☀️ Жара | 😋 Вкус"
+  },
+  {
+    "id": 141,
+    "name": "Миранда (330 мл)",
+    "category": "drinks",
+    "price": 90,
+    "unit": "банка",
+    "image": "https://avatars.mds.yandex.net/i?id=b5bebb5023e463f48f7a2e3d21161ccd2d33344d-4936815-images-thumbs&n=13",
+    "description": "Миранда маленькая банка.",
+    "benefits": "🥤 Освежение | ☀️ Жара | 😋 Вкус"
+  }
+]
