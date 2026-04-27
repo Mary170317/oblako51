@@ -3,8 +3,7 @@
 import { useState, useEffect } from "react";
 import { ShoppingCart, Plus, Minus, X, Phone, MapPin, Search, User, ExternalLink, MessageCircle, Send, Info, Check, AlertCircle } from "lucide-react";
 import productsData from "@/data/products.json";
-import { auth, registerUser, loginUser, logoutUser, onAuthChange } from "@/lib/firebase";
-import Script from "next/script";
+import { auth, registerUser, loginUser, logoutUser, onAuthChange, resetPassword } from "@/lib/firebase";
 
 interface Product {
   id: number;
@@ -21,7 +20,7 @@ interface CartItem extends Product {
   quantity: number;
 }
 
-const BOT_TOKEN = "ВАШ_ТОКЕН_БОТА";
+const BOT_TOKEN = "8216611154:AAFoWsw_uIO6ipvDkzHRZC6lMxzFA3cWkMk";
 const CHAT_ID = "7766881831";
 
 const categories = [
@@ -63,6 +62,9 @@ export default function Home() {
   const [isRegistering, setIsRegistering] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [selectedZone, setSelectedZone] = useState<number | null>(null);
+  const [forgotPassword, setForgotPassword] = useState(false);
+  const [resetEmail, setResetEmail] = useState("");
+  const [resetSent, setResetSent] = useState(false);
 
   useEffect(() => {
     const unsubscribe = onAuthChange((user: any) => {
@@ -98,47 +100,6 @@ export default function Home() {
       localStorage.setItem(`user_${firebaseUser.uid}`, JSON.stringify({ name: userName, address: userAddress, addressConfirmed }));
     }
   }, [userName, userAddress, addressConfirmed, firebaseUser]);
-
-  useEffect(() => {
-    if (isMapVisible && (window as any).ymaps) {
-      initMap();
-    }
-  }, [isMapVisible]);
-
-  const initMap = () => {
-    const ymaps = (window as any).ymaps;
-    ymaps.ready(() => {
-      const map = new ymaps.Map("yandex-map", {
-        center: [55.030, 82.920],
-        zoom: 13,
-        controls: ["zoomControl", "fullscreenControl"],
-      });
-
-      // Красная метка магазина (Облачная, 51)
-      const shopCoords = [55.0302, 82.9204];
-      const shopPlacemark = new ymaps.Placemark(shopCoords, {
-        hintContent: "🍎 Облачная 51",
-        balloonContent: "Магазин «Облачная 51»<br>ул. Облачная, 51",
-      }, {
-        preset: "islands#redIcon",
-      });
-      map.geoObjects.add(shopPlacemark);
-
-      // Обработка клика по карте
-      map.events.add("click", (e: any) => {
-        const coords = e.get("coords");
-        ymaps.geocode(coords).then((res: any) => {
-          const geoObject = res.geoObjects.get(0);
-          if (geoObject) {
-            const address = geoObject.getAddressLine();
-            setUserAddress(address);
-            setAddressConfirmed(false);
-            setIsMapVisible(false);
-          }
-        });
-      });
-    });
-  };
 
   const handleLogout = async () => { try { await logoutUser(); } catch (e) {} };
 
@@ -178,6 +139,15 @@ export default function Home() {
     }
   };
 
+  const handleResetPassword = async () => {
+    if (!resetEmail.trim()) return;
+    try {
+      await resetPassword(resetEmail);
+      setResetSent(true);
+      setTimeout(() => { setResetSent(false); setForgotPassword(false); setResetEmail(""); }, 3000);
+    } catch (e: any) { alert("Ошибка отправки письма. Проверьте email."); }
+  };
+
   const filtered = products.filter(p => (selectedCategory === "all" || p.category === selectedCategory) && p.name.toLowerCase().includes(searchQuery.toLowerCase()));
   const addToCart = (p: Product) => setCart(prev => { const ex = prev.find(i => i.id === p.id); return ex ? prev.map(i => i.id === p.id ? { ...i, quantity: i.quantity + 1 } : i) : [...prev, { ...p, quantity: 1 }]; });
   const updQty = (id: number, d: number) => setCart(prev => prev.map(i => i.id === id ? { ...i, quantity: Math.max(0, i.quantity + d) } : i).filter(i => i.quantity > 0));
@@ -198,8 +168,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[#FFF8F0] flex flex-col">
-      <Script src="https://api-maps.yandex.ru/2.1/?apikey=fc39361d-9f78-483d-bb14-c379469c72e8&lang=ru_RU" strategy="beforeInteractive" />
-
       <header className="sticky top-0 z-20 bg-[#FFF8F0] border-b border-orange-100 shadow-sm">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3"><div className="bg-orange-100 p-2 rounded-2xl"><span className="text-3xl">🍎</span></div><div><h1 className="text-2xl font-bold text-[#4a7c59]">Облачная 51</h1><p className="text-sm text-gray-500">Свежие продукты каждый день</p></div></div>
@@ -212,7 +180,7 @@ export default function Home() {
         </div>
       </header>
 
-      <div className="w-full h-48 md:h-64 overflow-hidden"><img src="https://avatars.mds.yandex.net/i?id=1464f4f5e31f574205e1066475e11c4c37253dac-4955124-images-thumbs&n=13" alt="Свежие продукты" className="w-full h-full object-cover" /></div>
+      <div className="w-full h-48 md:h-264 overflow-hidden"><img src="https://avatars.mds.yandex.net/i?id=1464f4f5e31f574205e1066475e11c4c37253dac-4955124-images-thumbs&n=13" alt="Свежие продукты" className="w-full h-full object-cover" /></div>
 
       <div className="bg-white border-b"><div className="container mx-auto px-4 py-3 flex flex-wrap items-center gap-2"><span className="flex items-center gap-1.5 text-sm text-gray-600 bg-orange-50 px-3 py-2 rounded-xl"><MapPin className="w-4 h-4 text-[#e87722]" /> ул. Облачная, 51</span><span className="flex items-center gap-1.5 text-sm text-gray-600 bg-orange-50 px-3 py-2 rounded-xl"><Phone className="w-4 h-4 text-[#e87722]" /> +7 913 004 1112</span><button onClick={() => setIsMapVisible(true)} className="text-sm bg-[#e8f5e9] text-[#4a7c59] px-4 py-2 rounded-xl font-medium hover:bg-[#c8e6c9] flex items-center gap-1.5"><MapPin className="w-4 h-4" /> Зоны доставки</button><a href="https://t.me/fruktiovoshiOblachnaya51" target="_blank" className="text-sm bg-[#e3f2fd] text-[#1565c0] px-4 py-2 rounded-xl font-medium hover:bg-[#bbdefb] flex items-center gap-1.5"><ExternalLink className="w-4 h-4" /> Telegram</a></div></div>
 
@@ -254,48 +222,17 @@ export default function Home() {
 
       <footer className="bg-[#2c3e50] text-white mt-auto"><div className="container mx-auto px-4 py-10"><div className="grid grid-cols-1 md:grid-cols-3 gap-8"><div><h3 className="text-xl font-bold mb-3 flex items-center gap-2"><span className="text-2xl">🍎</span> Облачная 51</h3><p className="text-gray-300 text-sm">Свежие продукты с доставкой по Новосибирску.</p></div><div><h4 className="font-semibold mb-3 text-green-300">Контакты</h4><ul className="space-y-2 text-sm text-gray-300"><li className="flex items-center gap-2"><MapPin className="w-4 h-4" /> ул. Облачная, 51</li><li className="flex items-center gap-2"><Phone className="w-4 h-4" /> +7 913 004 1112</li></ul></div><div><h4 className="font-semibold mb-3 text-green-300">Telegram</h4><a href="https://t.me/fruktiovoshiOblachnaya51" target="_blank" className="inline-flex items-center gap-2 bg-[#0088cc] text-white px-4 py-2 rounded-xl text-sm font-medium"><ExternalLink className="w-4 h-4" /> Подписаться</a></div></div><div className="border-t border-gray-600 mt-8 pt-6 text-center text-sm text-gray-400"><p>© 2026 Фрукты & Овощи | Облачная 51</p></div></div></footer>
 
-{/* Модалка карты */}
-{isMapVisible && (
-  <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center p-4" onClick={() => setIsMapVisible(false)}>
-    <div className="bg-white rounded-3xl overflow-hidden w-full max-w-lg shadow-2xl" onClick={e => e.stopPropagation()}>
-      <div className="flex items-center justify-between p-5">
-        <h2 className="font-bold text-lg text-[#4a7c59]">📍 ул. Облачная, 51 — магазин</h2>
-        <button onClick={() => setIsMapVisible(false)}><X className="w-5 h-5" /></button>
-      </div>
-      <div className="h-72 bg-gray-200">
-        <iframe
-          src="https://yandex.ru/map-widget/v1/?ll=82.804277%2C54.977501&z=16&pt=82.804277,54.977501,pm2rdl"
-          width="100%"
-          height="100%"
-          frameBorder="0"
-          allowFullScreen
-        ></iframe>
-      </div>
-      <div className="p-5 text-sm text-gray-600">
-        <p>📍 <strong>ул. Облачная, 51</strong>, Новосибирск, 630120</p>
-        <p className="mt-1">🚚 Введите адрес доставки вручную в поле выше.</p>
-        <div className="mt-3 space-y-1">
-          <p className="font-medium text-[#4a7c59]">Зоны доставки:</p>
-          {deliveryZones.map(z => (
-            <div key={z.id} className="flex items-center gap-2">
-              <div className="w-3 h-3 rounded-full" style={{backgroundColor: z.color}}></div>
-              <span>{z.name}: {z.price === 0 ? (z.note || "Бесплатно") : `${z.price} ₽`}</span>
-            </div>
-          ))}
+      {/* Модалка карты */}
+      {isMapVisible && (
+        <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center p-4" onClick={() => setIsMapVisible(false)}>
+          <div className="bg-white rounded-3xl overflow-hidden w-full max-w-lg shadow-2xl" onClick={e => e.stopPropagation()}><div className="flex items-center justify-between p-5"><h2 className="font-bold text-lg text-[#4a7c59]">📍 ул. Облачная, 51 — магазин</h2><button onClick={() => setIsMapVisible(false)}><X className="w-5 h-5" /></button></div><div className="h-72 bg-gray-200"><iframe src="https://yandex.ru/map-widget/v1/?ll=82.804277%2C54.977501&z=16&pt=82.804277,54.977501,pm2rdl" width="100%" height="100%" frameBorder="0" allowFullScreen></iframe></div><div className="p-5 text-sm text-gray-600"><p>📍 <strong>ул. Облачная, 51</strong>, Новосибирск, 630120</p><p className="mt-1">🚚 Введите адрес доставки вручную в поле выше.</p><div className="mt-3 space-y-1"><p className="font-medium text-[#4a7c59]">Зоны доставки:</p>{deliveryZones.map(z => <div key={z.id} className="flex items-center gap-2"><div className="w-3 h-3 rounded-full" style={{backgroundColor: z.color}}></div><span>{z.name}: {z.price === 0 ? (z.note || "Бесплатно") : `${z.price} ₽`}</span></div>)}</div></div></div>
         </div>
-      </div>
-    </div>
-  </div>
-)}
-      
+      )}
 
       {/* Модалка Характеристик */}
       {selectedProduct && (
         <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center p-4" onClick={() => setSelectedProduct(null)}>
-          <div className="bg-white rounded-3xl w-full max-w-md shadow-2xl" onClick={e => e.stopPropagation()}>
-            <div className="flex items-center justify-between p-5 border-b"><h2 className="font-bold text-lg text-[#4a7c59]">{selectedProduct.name}</h2><button onClick={() => setSelectedProduct(null)}><X className="w-5 h-5" /></button></div>
-            <div className="p-5"><img src={getProductImage(selectedProduct)} alt={selectedProduct.name} className="w-full h-48 object-cover rounded-2xl mb-4" /><p className="text-gray-700 text-sm mb-3">{selectedProduct.description || "Описание скоро появится."}</p>{selectedProduct.benefits && <div className="bg-green-50 rounded-2xl p-4"><p className="text-sm font-semibold text-[#4a7c59] mb-1">💚 Польза:</p><p className="text-sm text-gray-700">{selectedProduct.benefits}</p></div>}<div className="mt-4 flex items-center justify-between"><span className="text-2xl font-bold text-[#c0392b]">{selectedProduct.price > 0 ? `${selectedProduct.price} ₽` : "—"}</span><button onClick={() => { addToCart(selectedProduct); setSelectedProduct(null); }} className="bg-[#e87722] text-white px-6 py-3 rounded-2xl font-medium">🛒 В корзину</button></div></div>
-          </div>
+          <div className="bg-white rounded-3xl w-full max-w-md shadow-2xl" onClick={e => e.stopPropagation()}><div className="flex items-center justify-between p-5 border-b"><h2 className="font-bold text-lg text-[#4a7c59]">{selectedProduct.name}</h2><button onClick={() => setSelectedProduct(null)}><X className="w-5 h-5" /></button></div><div className="p-5"><img src={getProductImage(selectedProduct)} alt={selectedProduct.name} className="w-full h-48 object-cover rounded-2xl mb-4" /><p className="text-gray-700 text-sm mb-3">{selectedProduct.description || "Описание скоро появится."}</p>{selectedProduct.benefits && <div className="bg-green-50 rounded-2xl p-4"><p className="text-sm font-semibold text-[#4a7c59] mb-1">💚 Польза:</p><p className="text-sm text-gray-700">{selectedProduct.benefits}</p></div>}<div className="mt-4 flex items-center justify-between"><span className="text-2xl font-bold text-[#c0392b]">{selectedProduct.price > 0 ? `${selectedProduct.price} ₽` : "—"}</span><button onClick={() => { addToCart(selectedProduct); setSelectedProduct(null); }} className="bg-[#e87722] text-white px-6 py-3 rounded-2xl font-medium">🛒 В корзину</button></div></div></div>
         </div>
       )}
 
@@ -308,8 +245,38 @@ export default function Home() {
 
       {/* Модалка входа */}
       {showLogin && (
-        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center" onClick={() => setShowLogin(false)}>
-          <div className="bg-white rounded-3xl p-6 w-full max-w-md mx-4 shadow-2xl" onClick={e => e.stopPropagation()}><h2 className="text-xl font-bold mb-4 text-center text-[#4a7c59]">{isRegistering ? "📋 Регистрация" : "🔐 Вход"}</h2>{loginError && <p className="text-red-500 text-sm mb-3 text-center bg-red-50 py-2 rounded-xl">{loginError}</p>}{isRegistering && <input type="text" placeholder="Ваше имя" value={loginForm.name} onChange={e => setLoginForm({...loginForm, name: e.target.value})} className="w-full border border-gray-200 rounded-2xl px-4 py-3 mb-3 outline-none focus:border-[#4a7c59]" />}<input type="email" placeholder="Email" value={loginForm.email} onChange={e => setLoginForm({...loginForm, email: e.target.value})} className="w-full border border-gray-200 rounded-2xl px-4 py-3 mb-3 outline-none focus:border-[#4a7c59]" />{isRegistering && <input type="tel" placeholder="Телефон" value={loginForm.phone} onChange={e => setLoginForm({...loginForm, phone: e.target.value})} className="w-full border border-gray-200 rounded-2xl px-4 py-3 mb-3 outline-none focus:border-[#4a7c59]" />}<input type="password" placeholder="Пароль" value={loginForm.password} onChange={e => setLoginForm({...loginForm, password: e.target.value})} className="w-full border border-gray-200 rounded-2xl px-4 py-3 mb-4 outline-none focus:border-[#4a7c59]" /><button onClick={handleLogin} className="w-full bg-[#e87722] hover:bg-orange-600 text-white py-3.5 rounded-2xl font-medium transition-all shadow-lg shadow-orange-200">{isRegistering ? "Зарегистрироваться" : "Войти"}</button><p className="text-center text-sm text-gray-500 mt-4">{isRegistering ? "Уже есть аккаунт?" : "Нет аккаунта?"} <button onClick={() => setIsRegistering(!isRegistering)} className="text-[#4a7c59] font-medium underline">{isRegistering ? "Войти" : "Зарегистрироваться"}</button></p></div>
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center" onClick={() => { setShowLogin(false); setForgotPassword(false); }}>
+          <div className="bg-white rounded-3xl p-6 w-full max-w-md mx-4 shadow-2xl" onClick={e => e.stopPropagation()}>
+            {forgotPassword ? (
+              <>
+                <h2 className="text-xl font-bold mb-4 text-center text-[#4a7c59]">🔑 Восстановление пароля</h2>
+                {resetSent ? (
+                  <div className="text-center py-8"><span className="text-5xl block mb-3">📧</span><p className="text-green-600 font-medium">Письмо отправлено!</p><p className="text-sm text-gray-500 mt-2">Проверьте почту и следуйте инструкции.</p></div>
+                ) : (
+                  <>
+                    <p className="text-sm text-gray-500 mb-4 text-center">Введите email, и мы пришлём ссылку для сброса пароля.</p>
+                    <input type="email" placeholder="Email" value={resetEmail} onChange={e => setResetEmail(e.target.value)} className="w-full border border-gray-200 rounded-2xl px-4 py-3 mb-4 outline-none focus:border-[#4a7c59]" />
+                    <button onClick={handleResetPassword} className="w-full bg-[#4a7c59] text-white py-3 rounded-2xl font-medium hover:bg-green-700 transition-all">Отправить ссылку</button>
+                  </>
+                )}
+                <p className="text-center text-sm text-gray-500 mt-4"><button onClick={() => { setForgotPassword(false); setResetSent(false); }} className="text-[#4a7c59] font-medium underline">← Вернуться ко входу</button></p>
+              </>
+            ) : (
+              <>
+                <h2 className="text-xl font-bold mb-4 text-center text-[#4a7c59]">{isRegistering ? "📋 Регистрация" : "🔐 Вход"}</h2>
+                {loginError && <p className="text-red-500 text-sm mb-3 text-center bg-red-50 py-2 rounded-xl">{loginError}</p>}
+                {isRegistering && <input type="text" placeholder="Ваше имя" value={loginForm.name} onChange={e => setLoginForm({...loginForm, name: e.target.value})} className="w-full border border-gray-200 rounded-2xl px-4 py-3 mb-3 outline-none focus:border-[#4a7c59]" />}
+                <input type="email" placeholder="Email" value={loginForm.email} onChange={e => setLoginForm({...loginForm, email: e.target.value})} className="w-full border border-gray-200 rounded-2xl px-4 py-3 mb-3 outline-none focus:border-[#4a7c59]" />
+                {isRegistering && <input type="tel" placeholder="Телефон" value={loginForm.phone} onChange={e => setLoginForm({...loginForm, phone: e.target.value})} className="w-full border border-gray-200 rounded-2xl px-4 py-3 mb-3 outline-none focus:border-[#4a7c59]" />}
+                <input type="password" placeholder="Пароль" value={loginForm.password} onChange={e => setLoginForm({...loginForm, password: e.target.value})} className="w-full border border-gray-200 rounded-2xl px-4 py-3 mb-4 outline-none focus:border-[#4a7c59]" />
+                <button onClick={handleLogin} className="w-full bg-[#e87722] hover:bg-orange-600 text-white py-3.5 rounded-2xl font-medium transition-all shadow-lg shadow-orange-200">{isRegistering ? "Зарегистрироваться" : "Войти"}</button>
+                {!isRegistering && (
+                  <p className="text-center text-sm text-gray-500 mt-3"><button onClick={() => setForgotPassword(true)} className="text-[#4a7c59] font-medium underline">Забыли пароль?</button></p>
+                )}
+                <p className="text-center text-sm text-gray-500 mt-3">{isRegistering ? "Уже есть аккаунт?" : "Нет аккаунта?"} <button onClick={() => setIsRegistering(!isRegistering)} className="text-[#4a7c59] font-medium underline">{isRegistering ? "Войти" : "Зарегистрироваться"}</button></p>
+              </>
+            )}
+          </div>
         </div>
       )}
 
