@@ -167,10 +167,10 @@ export default function Home() {
     return false;
   }
 };
-  const handleChat = async () => {
+const handleChat = async () => {
   if (!chatMessage.trim()) return;
   try {
-    await fetch("https://oblako51-bot-mary17031725.waw0.amvera.tech/order", {
+    await fetch("https://oblako51-bot-mary17031725.waw0.amvera.tech/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -185,15 +185,27 @@ export default function Home() {
     alert("Ошибка отправки");
   }
 };
-  const handleOrder = async () => {
-    if (!isLoggedIn) { setShowLogin(true); return; }
-    if (!userAddress.trim() || !addressConfirmed) { alert("Подтвердите адрес"); return; }
-    if (!cart.length) { alert("Корзина пуста"); return; }
-    const list = cart.map(i => `${i.name} — ${i.quantity} ${i.unit} × ${i.price} ₽ = ${i.quantity * i.price} ₽`).join("\n");
-    const zone = selectedZone ? `\n🚚 ${deliveryZones.find(z => z.id === selectedZone)?.name}` : "";
-    const ok = await sendTg(`🛒 НОВЫЙ ЗАКАЗ!\n👤 ${userName}\n📧 ${userEmail}\n📍 ${userAddress}${zone}\n\n${list}\n💰 ИТОГО: ${total} ₽`);
-    if (ok) { alert("✅ Заказ отправлен!"); setCart([]); setIsCartOpen(false); } else alert("Ошибка");
-  };
+const handleOrder = async () => {
+  if (!isLoggedIn) { setShowLogin(true); return; }
+  if (!userAddress.trim() || !addressConfirmed) { alert("Подтвердите адрес"); return; }
+  if (!cart.length) { alert("Корзина пуста"); return; }
+  const list = cart.map(i => `${i.name} — ${i.quantity} ${i.unit} × ${i.price} ₽ = ${i.quantity * i.price} ₽`).join("\n");
+  const zone = selectedZone ? `\n🚚 ${deliveryZones.find(z => z.id === selectedZone)?.name}` : "";
+  const message = `🛒 НОВЫЙ ЗАКАЗ!\n👤 ${userName}\n📧 ${userEmail}\n📍 ${userAddress}${zone}\n\n${list}\n💰 ИТОГО: ${total} ₽`;
+
+  try {
+    await fetch("https://oblako51-bot-mary17031725.waw0.amvera.tech/order", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text: message }),
+    });
+    alert("✅ Заказ отправлен!");
+    setCart([]);
+    setIsCartOpen(false);
+  } catch (e) {
+    alert("Ошибка отправки заказа");
+  }
+};
 
   return (
     <div className="min-h-screen bg-[#FFF8F0] flex flex-col">
