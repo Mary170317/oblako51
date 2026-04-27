@@ -157,19 +157,17 @@ export default function Home() {
 
 const sendTg = async (text: string) => {
   try {
-    await fetch("https://dostavka-mary17031725.waw0.amvera.tech/order", {
+    await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        name: userName || "Гость",
-        address: userAddress || "—",
-        orderText: text,
-        total: total,
+        chat_id: CHAT_ID,
+        text: text,
       }),
     });
     return true;
   } catch (e) {
-    console.error("Ошибка:", e);
+    console.error("Ошибка отправки в Telegram:", e);
     return false;
   }
 };
