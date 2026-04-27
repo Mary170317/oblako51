@@ -180,7 +180,13 @@ export default function Home() {
         </div>
       </header>
 
-      <div className="w-full h-48 md:h-264 overflow-hidden"><img src="https://avatars.mds.yandex.net/i?id=1464f4f5e31f574205e1066475e11c4c37253dac-4955124-images-thumbs&n=13" alt="Свежие продукты" className="w-full h-full object-cover" /></div>
+      <div className="w-full h-32 md:h-48 overflow-hidden">
+  <img 
+    src="https://avatars.mds.yandex.net/i?id=1464f4f5e31f574205e1066475e11c4c37253dac-4955124-images-thumbs&n=13" 
+    alt="Свежие продукты" 
+    className="w-full h-full object-cover" 
+  />
+</div>
 
       <div className="bg-white border-b"><div className="container mx-auto px-4 py-3 flex flex-wrap items-center gap-2"><span className="flex items-center gap-1.5 text-sm text-gray-600 bg-orange-50 px-3 py-2 rounded-xl"><MapPin className="w-4 h-4 text-[#e87722]" /> ул. Облачная, 51</span><span className="flex items-center gap-1.5 text-sm text-gray-600 bg-orange-50 px-3 py-2 rounded-xl"><Phone className="w-4 h-4 text-[#e87722]" /> +7 913 004 1112</span><button onClick={() => setIsMapVisible(true)} className="text-sm bg-[#e8f5e9] text-[#4a7c59] px-4 py-2 rounded-xl font-medium hover:bg-[#c8e6c9] flex items-center gap-1.5"><MapPin className="w-4 h-4" /> Зоны доставки</button><a href="https://t.me/fruktiovoshiOblachnaya51" target="_blank" className="text-sm bg-[#e3f2fd] text-[#1565c0] px-4 py-2 rounded-xl font-medium hover:bg-[#bbdefb] flex items-center gap-1.5"><ExternalLink className="w-4 h-4" /> Telegram</a></div></div>
 
